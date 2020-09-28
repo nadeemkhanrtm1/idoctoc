@@ -3,19 +3,11 @@
     font-family: "Inter";
     src: url("/home/nadeem/Downloads/landing_idoctoc-master/src/font/Inter/Inter-VariableFont_slnt,wght.ttf");
 }
+
 /*font-family:Lato added here below code */
 @font-face{
     font-family: "Lato";
-    src: url('./font/Lato/Lato-Regular.ttf'),
-    url('./font/Lato/Lato-Thin.ttf'),
-    url("./font/Lato/Lato-Black.ttf"),
-    url("./font/Lato/Lato-BlackItalic.ttf"),
-    url("./font/Lato/Lato-Bold.ttf"),
-    url("./font/Lato/Lato-BoldItalic.ttf"),
-    url('./font/Lato/Lato-Italic.ttf'),
-    url('./font/Lato/Lato-Light.ttf'),
-    url('./font/Lato/Lato-LightItalic.ttf'),
-    url('./font/Lato/Lato-ThinItalic.ttf');
+    src: url('./font/Inter/Inter-VariableFont_slnt\,wght.ttf');
 }
 
 /*font-family:Playfair added here below code */
@@ -24,6 +16,24 @@
     src: url('./font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf')
     ,url('./font/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf');
 }
+
+/*font-family:Overpass added here below code */
+@font-face{
+  font-family: "Overpass";
+  src:url('./font/Overpass/Overpass-Black.ttf'),url('./font/Overpass/Overpass-BlackItalic.ttf'),url('./font/Overpass/Overpass-Bold.ttf'),
+  url('./font/Overpass/Overpass-BoldItalic.ttf'),url('./font/Overpass/Overpass-ExtraBold.ttf'),url('./font/Overpass/Overpass-ExtraBoldItalic.ttf'),
+  url('./font/Overpass/Overpass-ExtraLight.ttf'),url('./font/Overpass/Overpass-ExtraLightItalic.ttf'),url('./font/Overpass/Overpass-Italic.ttf'),
+  url('./font/Overpass/Overpass-Light.ttf'),url('./font/Overpass/Overpass-LightItalic.ttf'),url('./font/Overpass/Overpass-Regular.ttf'),
+  url('./font/Overpass/Overpass-SemiBold.ttf'),url('./font/Overpass/Overpass-SemiBoldItalic.ttf'),url('./font/Overpass/Overpass-Thin.ttf'),
+  url('./font/Overpass/Overpass-ThinItalic.ttf');
+}
+
+/*font-family:Poppins added here below code */
+@font-face{
+  font-family:"Poppins";
+  src:url('./font/Poppins/Poppins-Regular.ttf');
+}
+
 /********************************************* button colors *************************************************/
 .btn_1, .btn_2, .btn_2:hover {
     background-color: #FFAC50;
@@ -68,6 +78,8 @@ body {
     background-size: 200% auto;
     text-transform: uppercase;
     width: 30%;
+    text-decoration: none;
+    text-align:center;
   }
   
   /* line 40, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_button.scss */
@@ -1833,3 +1845,139 @@ body {
 }
 
 /***********************=================== contact form end ====================****************************/
+
+/***********************=================== Schedule Appointments ===============****************************/
+
+.sacontainer{
+  margin-top: 100px;
+}
+
+.sacontainer h3{
+  font-family:"Lato";
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #606060;
+}
+
+.figurecaption{
+  font-family: 'Lato';
+font-size: 0.9rem;
+font-style: italic;
+font-weight: 400;
+color: #292685;
+}
+
+.safirstdiv{
+  border-right: 1px solid #858585;
+}
+
+.selectdoctor{
+  color: #1E1C61 !important;
+  font-family: "Playfair" !important;
+  font-weight: 700 !important;
+  font-size: 1.8rem !important;
+
+}
+
+.buttonfind{
+  border-radius: 30px !important;
+  color: #FFFFFF !important;
+  font-family: 'Lato' !important;
+  font-size: 1.5rem !important;
+  background-color: #15ABB4 !important;
+  border:none !important;
+}
+
+.buttonfind:hover{
+  box-shadow: 1px 1px 4px rgb(141, 141, 141) !important;
+}
+
+.chooseuptofive{
+  color: #8D8D8D !important;
+  font-family: 'Lato' !important;
+font-size: 13px !important;
+font-style: normal !important;
+font-weight: 400 !important;
+letter-spacing: 0.02em !important;
+
+}
+
+.selectyoursymptoms{
+ max-width: 1800px !important;
+ margin: 0  auto !important;
+ text-align: center !important;
+}
+
+.selectyoursymptoms img{
+  width: 180px;
+  margin:0 10px;
+}
+
+.finddoc{
+  font-family: 'Lato' !important;
+font-size: 18px !important;
+font-style: normal !important;
+font-weight: 800 !important;
+background-color:#15ABB4 !important;
+border: none !important;
+text-transform: uppercase !important;
+color: #FFFFFF !important;
+}
+
+.finddoc:hover{
+  box-shadow: 1px 1px 4px rgb(141, 141, 141) !important;
+}
+
+/************************************** Profile Page after login page ***************************************/
+
+/* images portion Code below untill next comment hit */
+.Image_portion{
+  text-align: center;
+  margin: 15px 0 0 0;
+}
+.Image_portion img{
+  border-radius: 50%;
+  border: 5px solid #00A4AD;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.Image_portion p {
+  font-family: 'Lato';
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+color: #000000;
+
+
+}
+/* title portion Code below untill next comment hit */
+.title_portion{
+  margin: 10px 0 0 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #C8C8C8;
+  box-shadow: 
+    0px -1px 1px 1px rgba(70, 70, 70, 0.753);
+}
+.title_portion .link{
+  height: 100%;
+  width: 250px;
+  text-align: center;
+  line-height: 50px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-family: 'Overpass';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  color: #767474; 
+}
+
+/*personal details*/

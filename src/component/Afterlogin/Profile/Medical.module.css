@@ -1,0 +1,75 @@
+/*table portion */
+.form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: top ;
+    justify-content: space-around;
+  }
+  
+  .table{
+    border-spacing: 18px;
+    text-align: right;
+  }
+  
+.table tr th p,.table2 tr th p{
+  font-family: 'Overpass';
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+text-align: right;
+color:'#000000' !important;
+
+}
+
+  .table tr td{
+    padding-left: 40px;
+  }
+
+  .table2{
+    border-spacing: 18px;
+  }
+
+  .table2 tr th{
+    text-align: right;
+    padding:15px 0;
+    vertical-align: middle;
+  }
+
+  .table2 tr td{
+    padding-left: 40px;
+  }
+
+
+
+  input[type="radio"] {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin: 0 5px  0 0;
+  }
+  
+  
+  .update{
+    border:none;
+    background: #FFAC50;
+    padding:15px 50px;
+    border-radius:5px;
+    font-family: Lato;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0.02em;
+text-align: left;
+color: #19193E;
+transition:0.5s ease;
+}
+
+.update:hover{
+box-shadow: 1px 1px 5px rgb(87, 87, 87);
+}
+
+.span{
+  color:#7A7A7A !important;
+}

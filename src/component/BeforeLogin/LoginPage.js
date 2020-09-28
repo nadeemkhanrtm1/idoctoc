@@ -4,15 +4,14 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const LoginPage = () => {
-  const [startDate,
-    setStartDate] = useState(new Date());
+  const [startDate,setStartDate] = useState(null);
   return (
     <React.Fragment>
       <Navbar/>
-     {/***********************<!-- ================ contact section start ================= -->********************/}
+{/***********************<!-- ================ contact section start ================= -->********************/}
       <section className="contact-section section_padding">
         <div className="container">
           <div className="d-sm-block mb-5 pb-4">
@@ -50,22 +49,27 @@ const LoginPage = () => {
                           required/>
                       </div>
                     </div>
-                    <div className="col-12">
-                      <div className="form-group">
-                        <DatePicker
-                          className="form-control"
-                          dateFormat="dd/MM/yyyy"
-                          closeOnScroll={e => e.target === document}
-                          selected={startDate}
-                          onChange={date => setStartDate(date)}/>
+                    <div className="row m-0 p-0">
+                      <div className="col-4">
+                        <div className="form-group">
+                          <DatePicker
+                            className="form-control"
+                            dateFormat="dd/MM/yyyy"
+                            closeOnScroll={e => e.target === document}
+                            onChange={date => setStartDate(date)}
+                            selected={startDate}
+                            placeholderText="date of birth"/>
+                        </div>
                       </div>
-                    </div>
-                    <div class="form-group">
-                      <select class="form-control" id="exampleFormControlSelect1">
-                        <option selected>sex</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                      </select>
+                      <div className="col-8">
+                        <div className="form-group">
+                          <select class="form-control">
+                            <option selected>sex</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                          </select>
+                        </div>
+                      </div>
                     </div>
                     <div className="col-12">
                       <div className="form-group">
@@ -81,8 +85,7 @@ const LoginPage = () => {
                     <div className="col-2">
                       <div className="form-group ">
                         <select name="countryCode" id="" className="form-control">
-                          <option data-countryCode="GB" value="44" Selected>UK (+44)</option>
-                          <option data-countryCode="US" value="1">USA (+1)</option>
+                          <option data-countryCode="IN" value="91">India (+91)</option>
                           <optgroup label="Other countries">
                             <option data-countryCode="DZ" value="213">Algeria (+213)</option>
                             <option data-countryCode="AD" value="376">Andorra (+376)</option>
@@ -315,33 +318,38 @@ const LoginPage = () => {
                     </div>
                   </div>
                   <div className="col-12">
-                      <div className="form-group">
-                        <input
-                          className="form-control"
-                          name="pwd"
-                          id="pwd"
-                          type="password"
-                          placeholder='Enter password'
-                          required/>
-                      </div>
+                    <div className="form-group">
+                      <input
+                        className="form-control"
+                        name="pwd"
+                        id="pwd"
+                        type="password"
+                        placeholder='Enter password'
+                        required/>
                     </div>
-                    <div className="col-12">
-                      <div className="form-group">
-                        <input
-                          className="form-control"
-                          name="cnfpwd"
-                          id="cnfpwd"
-                          type="password"
-                          placeholder='Enter confirm password'
-                          required/>
-                      </div>
+                  </div>
+                  <div className="col-12">
+                    <div className="form-group">
+                      <input
+                        className="form-control"
+                        name="cnfpwd"
+                        id="cnfpwd"
+                        type="password"
+                        placeholder='Enter confirm password'
+                        required/>
                     </div>
+                  </div>
                   <div className="form-group mt-3">
                     <Link to="/home" type="submit" className="button btn_1">Register</Link>
                   </div>
-                  <p style={{width:"30%",textAlign:"center"}}> OR</p>
+                  <p
+                    style={{
+                    width: "30%",
+                    textAlign: "center"
+                  }}>
+                    OR</p>
                   <div className="form-group mt-3">
-                    <button type="submit" className="button btn_1">Login</button>
+                    <Link type="submit" className="button btn_1">Login</Link>
                   </div>
                 </form>
               </div>
@@ -352,8 +360,8 @@ const LoginPage = () => {
           </div>
         </div>
       </section>
-      {/**********************<!-- ================ contact section end ================= -->*********************/}
-      <Footer/>
+{/**********************<!-- ================ contact section end ================= -->*********************/}
+<Footer/>
     </React.Fragment>
   )
 }

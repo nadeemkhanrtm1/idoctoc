@@ -1,0 +1,76 @@
+.form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: space-around;
+    font-family: 'Overpass';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.form p{
+    margin-bottom: 0px !important;
+}
+
+.table tr th {
+    text-align: right !important;
+padding:20px 0;
+}
+
+.table tr td{
+    padding-left:20px;
+    font-family: 'Overpass';
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+color: #000000;
+
+}
+
+.table tr td p{
+    color:#000000;
+}
+
+.table tr .i{
+    font-family: Overpass;
+font-size: 16px;
+font-style: italic;
+font-weight: 600;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+color:'red'
+}
+
+.table2 tr th{
+padding:20px 0;
+}
+
+.table2 tr td p{
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+color: #000000;
+}
+
+.update{
+    border:none;
+    background: #FFAC50;
+    padding:15px 50px;
+    border-radius:5px;
+    font-family: Lato;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0.02em;
+text-align: left;
+color: #19193E;
+transition:0.5s ease;
+}
+
+.update:hover{
+box-shadow: 1px 1px 5px rgb(87, 87, 87);
+}

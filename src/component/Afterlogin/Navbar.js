@@ -4,6 +4,13 @@ import david from "../../images/david.jpg";
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+  const p = {
+    fontFamily: 'Playfair Display',
+fontSize: '0.9rem',
+fontStyle: 'normal',
+fontWeight: '700',
+color: '#19193E',
+  }
   return (
     <header>
       <nav className="nav_bar">
@@ -14,8 +21,9 @@ const Navbar = () => {
           <Link to="/schedule" className="link">SCHEDULE APPOINTMENTS</Link>
         </div>
         <div className="profile_nav">
-          <p>Hello!<br/>
-            Dmitry Galkin</p>
+          <a style={p}>Hello!<br/>
+            Dmitry Galkin<br/>
+            <Link className="btn p-0 m-0 logoutbtn" to="/">LOG OUT</Link></a>
           <img src={david}></img>
         </div>
       </nav>
